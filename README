@@ -1,0 +1,14 @@
+dm-checked-types
+----------------
+Property types that add CHECK constraints to your DB and validations to your model. Data integrity FTW.
+
+Usage:
+  require 'dm-checked-types'
+
+  class Product
+    include DataMapper::Resource
+
+    property :name, String, :key => true
+    property, :amount, CheckedInteger[:gt => 0]
+    property, :price,  CheckedInteger[:gte => 0]
+  end
