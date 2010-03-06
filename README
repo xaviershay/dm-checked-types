@@ -12,3 +12,7 @@ Usage:
     property, :amount, CheckedInteger[:gt => 0]
     property, :price,  CheckedInteger[:gte => 0]
   end
+
+
+Notes:
+  Soz haven't extracted specs out of my main app yet
