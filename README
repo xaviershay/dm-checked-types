@@ -2,6 +2,9 @@ dm-checked-types
 ----------------
 Property types that add CHECK constraints to your DB and validations to your model. Data integrity FTW.
 
+Install:
+  gem install dm-checked-types
+
 Usage:
   require 'dm-checked-types'
 
